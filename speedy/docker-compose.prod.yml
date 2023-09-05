@@ -5,12 +5,12 @@ services:
         build:
             context: ./
             dockerfile: Dockerfile.prod
-        command: gunicorn speedy.wsgi:application --bind 0.0.0.0:8080
+        command: gunicorn speedy.wsgi:application --bind 0.0.0.0:8000
         volumes:
             - static_volume:/home/speedy/web/static
             - media_volume:/home/speedy/web/media
         expose:
-            - '8080'
+            - '8000'
         stdin_open: true
         tty: true
         env_file:
