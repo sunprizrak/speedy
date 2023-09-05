@@ -1,0 +1,4 @@
+django
+gunicorn
+django-cleanup
+psycopg2-binary

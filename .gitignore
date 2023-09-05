@@ -1,0 +1,22 @@
+__pycache__/
+
+# Django stuff:
+/speedy/*.log
+
+# dotenv
+/speedy/.env.dev
+
+# virtualenv
+venv/
+
+/speedy/db.sqlite3
+/speedy/media/
+/speedy/*.pyc
+/speedy/*.db
+speedy/*.pid
+
+# Ignore Django Migrations in Development if you are working on team
+
+# Only for Development only
+/speedy/.env.dev
+/speedy/.env.prod

@@ -1,0 +1,113 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <section id="section-top">
+        <div class="video">
+            <video data-object-fit="" autoplay="" muted="" playsinline="" loop="" src="{% static 'main/video/index.mp4' %}"></video>
+        </div>
+        <div id="top-banner">
+            <div id="top-label-one" class="text-nowrap">
+                <h1 class="text-center">Odkryj świat nieskończonych możliwości gier z Yodco</h1>
+            </div>
+            <div id="top-label-two" class="wrap">
+                <h3 class="text-start">
+                    Zanurz się w świecie ekscytujących i ekscytujących gier mobilnych stworzonych przez Yodco. Ekscytujące przygody, wymagające łamigłówki i niekończąca się rozrywka na wyciągnięcie ręki. Przygotuj się na przeniesienie wrażeń z gry na wyższy poziom dzięki Yodco.
+                </h3>
+            </div>
+        </div>
+    </section>
+    <section id="section-bottom" class="container-fluid  bg-dark bg-gradient">
+        <div class="container">
+            <div class="row">
+                <div class="col text-wrap" >
+                    <h1 id="bottom-top-label-one" class="text-center">Uwolnij moc gier mobilnych</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-wrap d-flex justify-content-center">
+                    <h3 class="text-center" id="bottom-top-label-two">
+                        Yodco oferuje najnowsze i najlepsze gry mobilne od utalentowanych programistów z całego świata.
+                        Zanurz się w ekscytujących przygodach, strategicznych wyzwaniach i niekończącej się rozrywce na wyciągnięcie ręki.
+                        Dołącz do naszej społeczności graczy i poczuj dreszczyk emocji związany z grami mobilnymi jak nigdy dotąd.
+                    </h3>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col text-wrap">
+                            <h1 class="text-center">
+                                Wyróżnij się z tłumu dzięki opatentowanej mechanice gry
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-wrap">
+                            <h3 class="text-center">
+                                Na zatłoczonym rynku ważne jest, aby oferować coś wyjątkowego.
+                                Dzięki Yodco możesz promować gry zawierające autorskie mechaniki, dzięki czemu Twoja gra wyróżni się na tle konkurencji.
+                                Daj się zauważyć i dotrzyj do większej liczby graczy dzięki innowacyjnym funkcjom gier.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-flex justify-content-center" >
+                    <img class="img-fluid index-image shadow" src="{% static 'main/img/marginalia-coming-soon.png' %}">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-6 d-flex justify-content-center">
+                    <img class="img-fluid index-image shadow" src="{% static 'main/img/marginalia-online-shopping.png' %}">
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col text-wrap">
+                            <h1 class="text-center">
+                                Poszerz swoje horyzonty w grach dzięki klejnotom z Europy Wschodniej
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-wrap">
+                            <h3 class="text-center">
+                                Odkryj świat wyjątkowych i ekscytujących gier stworzonych przez utalentowanych programistów z Europy Wschodniej.
+                                Od wciągającej opowieści po innowacyjną rozgrywkę – starannie dobrana oferta Yodco sprawi, że poczujesz się jak nigdy dotąd.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col text-wrap">
+                            <h1 class="text-center">
+                                Boost Your Mobile Game Promotion
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-wrap">
+                            <h3 class="text-center">
+                                Wyróżnij się na zatłoczonym rynku dzięki przyciągającym wzrok kreacjom zaprojektowanym w celu promowania Twojej gry mobilnej.
+                                Od kampanii w mediach społecznościowych po reklamy ukierunkowane — Yodco dysponuje wszystkimi narzędziami i wiedzą, których potrzebujesz,
+                                aby pomóc Ci ulepszyć promocję gier i dotrzeć do nowych odbiorców.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-flex justify-content-center" >
+                    <img class="img-fluid index-image shadow" src="{% static 'main/img/marginalia-order-complete.png' %}">
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}
