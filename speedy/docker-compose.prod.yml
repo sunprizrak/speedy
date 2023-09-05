@@ -23,6 +23,8 @@ services:
         tty: true
         volumes:
             - postgres_data:/var/lib/postgresql/data/
+        ports:
+            - "5433:5432"
         env_file:
             - ./.env.prod.db
     nginx:
@@ -33,8 +35,8 @@ services:
             - ./data/certbot/conf:/etc/letsencrypt
             - ./data/certbot/www:/var/www/certbot
         ports:
-            - "80:80"
-            - "443:443"
+            - "88:80"
+            - "444:443"
         stdin_open: true
         tty: true
         command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
