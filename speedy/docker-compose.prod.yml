@@ -7,8 +7,8 @@ services:
             dockerfile: Dockerfile.prod
         command: gunicorn speedy.wsgi:application --bind 0.0.0.0:8000
         volumes:
-            - static_volume:/home/speedy/web/static
-            - media_volume:/home/speedy/web/media
+            - static_volume:/home/speedy/web/staticfiles
+            - media_volume:/home/speedy/web/mediafiles
         expose:
             - '8000'
         stdin_open: true
