@@ -88,9 +88,18 @@ h3 {
     font-family: 'codec_proregular';
 }
 
-h1, h2, h3, h4, h5 {
+p, h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
+
+.select-none {
+    user-select: none;
+}
+
+.for-img {
+    pointer-events: none;
+}
+
 
 /* Navbar */
 
@@ -125,11 +134,13 @@ h1, h2, h3, h4, h5 {
 }
 /* end Navbar */
 
-
+main {
+    background: #404347;
+}
 
 /* Index */
 .video {
-    z-index: -1;
+    z-index: 1;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -152,14 +163,13 @@ h1, h2, h3, h4, h5 {
 #section-bottom {
     margin-top: -50px;
     padding-top: 30px;
-    padding-bottom: 15px;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
+    padding-bottom: 30px;
+    border-top-right-radius: 3%;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
     z-index: 1000;
     position: relative;
-    -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15) inset;
-    -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15) inset;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15) inset;
 }
 
 #bottom-top-label-two {
@@ -170,7 +180,87 @@ h1, h2, h3, h4, h5 {
     width: 400px;
 }
 
-
-
 /* end Index */
+
+/* Footer */
+.footer-link {
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+}
+
+.footer-link:hover {
+    color: #2466c1;
+}
+
+.footer-span {
+    color: #fff;
+}
+
+/* social button */
+
+.middle {
+    text-align: center;
+    position: absolute!important;
+}
+
+.soc-btn {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.soc-btn i {
+    display: inline-block;
+    line-height: 70px;
+    font-size: 26px;
+    transition: 0.2s linear;
+}
+
+.soc-btn:hover i {
+    transform: scale(1.3);
+    color: #fff;
+}
+
+.soc-btn::before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #2466c1;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.soc-btn:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa {
+    0%{
+        left: -110%;
+        top: 90%;
+    }50%{
+        left: 10%;
+        top: -30%;
+    }100%{
+        top: -10%;
+        left: -10%;
+    }
+}
+
+/* end social button */
+
+/* End Footer */
 
