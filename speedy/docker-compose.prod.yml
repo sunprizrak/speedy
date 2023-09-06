@@ -10,7 +10,7 @@ services:
             - static_volume:/home/speedy/web/static
             - media_volume:/home/speedy/web/media
         expose:
-            - '9000'
+            - '8000'
         stdin_open: true
         tty: true
         env_file:
