@@ -2,3 +2,14 @@
 {% load static %}
 
 {% block title %}{{ title }}{% endblock %}
+
+{% block content-top %}
+    <div class="video">
+        <video data-object-fit="" autoplay="" muted="" playsinline="" loop="" src="{% static 'main/video/rings_jor_may.mp4' %}"></video>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container vh-100">
+    </div>
+{% endblock %}
