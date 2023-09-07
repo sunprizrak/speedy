@@ -151,6 +151,9 @@ p, h1, h2, h3, h4, h5, h6 {
     pointer-events: none;
     top: 0;
     position: relative;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
 }
 
 #top-banner{
@@ -173,10 +176,6 @@ p, h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-#bottom-top-label-two {
-    width: 50%;
-}
-
 .index-image {
     width: 400px;
 }
@@ -184,9 +183,31 @@ p, h1, h2, h3, h4, h5, h6 {
 /* end Index */
 
 /* Games */
-.games-img-logo {
-    width: 220px;
+
+/* card app */
+.card-app {
+    width: 95%;
+    display: inline-flex;
+    border-radius: 30px;
 }
+
+.card-app .card-img-logo {
+    width: 220px;
+    border-radius: 30px;
+}
+
+.card-app .card-text {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.card-app .card-btn {
+    margin-left: 5px;
+}
+
+/* end card app */
 
 .btn-google-play, .btn-app-store {
     user-select: none;
@@ -195,16 +216,17 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .btn-google-play a , .btn-app-store a {
     user-select: none;
+    text-decoration: none;
 }
 
 .btn-google-play img {
     width: 150px;
-    height: 50px;
+    height: auto;
 }
 
 .btn-app-store img {
-    width: 130px:
-    height: 30px;
+    width: 120px:
+    height: auto;
 }
 
 .btn-google-play:hover, .btn-app-store:hover {
