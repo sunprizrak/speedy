@@ -2,3 +2,56 @@
 {% load static %}
 
 {% block title %}{{ title }}{% endblock %}
+
+{% block content-top %}
+    <div class="video">
+        <video data-object-fit="" autoplay="" muted="" playsinline="" loop="" src="{% static 'main/video/rings_jor_may.mp4' %}"></video>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container vh-100">
+        <div class="row">
+            <div class="col-2">
+                <div class="row">
+                    <div class="col">
+                        <img class="img-fluid games-img-logo shadow select-none for-img" src="{% static 'main/img/logo_rings_app.png' %}">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <span class="btn-google-play">
+                            <a href="https://play.google.com/store/apps/details?id=com.yodcomedia.ringssaga&hl=en&pli=1" target="_blank">
+                                <img class="for-img" src="{% static 'main/img/google-play-badge.png' %}">
+                            </a>
+                        </span>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <span class="btn-app-store">
+                            <a href="https://apps.apple.com/us/app/rings-saga-dantes-inferno/id6446437225" target="_blank">
+                                <img class="for-img" src="{% static 'main/img/app-store-badge.svg' %}">
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="row">
+                    <div class="col">
+                        <h2>Rings Saga: Dantes Inferno</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>Embark on a journey into the fiery Circles of Hell with our arcade game, "Ring Saga: Dante's Inferno".
+                            This adventure combines classic ring toss mechanics with the narrative of Dante's descent into Hell, guided by the great poet himself.
+                        </p>
+                        <p>The game is built on simple mechanics: with intuitive swipes, throw rings into pits (circles), testing your accuracy to move forward through the levels.
+                            Each circle represents a new layer of Hell, starting from Limbo, crossing the Styx River on Charon's boat, and overcoming the circles of Lust and Greed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

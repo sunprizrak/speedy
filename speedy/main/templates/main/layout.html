@@ -21,8 +21,14 @@
         {% include 'main/header.html' %}
     </header>
     <main>
-        {% block content %}
-        {% endblock %}
+        <section id="section-top">
+            {% block content-top %}
+            {% endblock %}
+        </section>
+        <section id="section-bottom" class="container-fluid  bg-dark bg-gradient">
+            {% block content %}
+            {% endblock %}
+        </section>
     </main>
     <footer>
         {% include 'main/footer.html' %}
