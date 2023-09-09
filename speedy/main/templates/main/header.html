@@ -1,4 +1,4 @@
-{% load static %}
+{% load static i18n %}
 
 <nav class="navbar navbar-expand-lg fixed-top bg-dark bg-gradient">
     <div class="container-fluid">
@@ -11,13 +11,28 @@
         <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute end-0 pe-5">
                 <li class="nav-item">
-                    <a class="nav-link {% if '/' == request.path %}active{% endif %}" aria-current="page" href="{% url 'home' %}">Home</a>
+                    <a class="nav-link {% if '/' == request.path %}active{% endif %}" aria-current="page" href="{% url 'home' %}">{% trans 'Dom' %}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if '/about' == request.path %}active{% endif %}" href="{% url 'about' %}">About us</a>
+                    <a class="nav-link {% if '/about' == request.path %}active{% endif %}" href="{% url 'about' %}">{% trans 'O nas' %}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if '/games' == request.path %}active{% endif %}" href="{% url 'games' %}">Games</a>
+                    <a class="nav-link {% if '/games' == request.path %}active{% endif %}" href="{% url 'games' %}">{% trans 'Gry' %}</a>
+                </li>
+                <li class="nav-item language">
+                    <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                        <input name="next" type="hidden" value="{{ redirect_to }}">
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="language" onchange="javascript:this.form.submit()">
+                            {% get_current_language as LANGUAGE_CODE %}
+                            {% get_available_languages as LANGUAGES %}
+                            {% get_language_info_list for LANGUAGES as languages %}
+                            {% for language in languages %}
+                                <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %} selected {% endif %}>
+                                    {{ language.name_local }} ({{ language.code }})
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </form>
                 </li>
             </ul>
         </div>

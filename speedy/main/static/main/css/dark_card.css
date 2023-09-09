@@ -94,40 +94,6 @@
   --glow-rotate-unit: 1deg;
 }
 
-#dark_card::before,
-#dark_card::after {
-  content: "CSS.registerProperty is supported ✅";
-  position: absolute;
-  display: block;
-  top: 8px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: calc(100% - 160px);
-  max-width: 380px;
-  height: auto;
-  padding: 8px;
-  border-radius: 8px;
-  background: #48b93c;
-  color: white;
-  text-align: center;
-  font-family: sans-serif;
-  z-index: var(--supported, 0);
-  opacity: var(--supported, 0);
-}
-
-#dark_card::after {
-  content: "CSS.registerProperty is NOT supported ❌";
-  background: #b93c3c;
-  z-index: var(--not-supported, 0);
-  opacity: var(--not-supported, 0);
-}
-
-#dark_card::before,
-#dark_card::after {
-  display: none !important;
-}
-
 *,
 *:before,
 *:after {
@@ -135,33 +101,33 @@
 }
 
 #dark_card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 #dark_card > div {
-  width: var(--card-width);
-  width: min(480px, var(--card-width));
-  aspect-ratio: 1.5/1;
-  color: white;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 2;
-  border-radius: var(--card-radius);
-  cursor: pointer;
+    width: var(--card-width);
+    width: min(480px, var(--card-width));
+    aspect-ratio: 1.5/1;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    border-radius: var(--card-radius);
+    cursor: pointer;
 }
+
 #dark_card > div:hover > div {
-  --text-color: white;
-  box-shadow: 0 0 calc(var(--white-shadow) * 1vw) calc(var(--white-shadow) * 0.15vw) rgba(255, 255, 255, 0.2);
-  animation: shadow-pulse calc(var(--animation-speed) * 2) linear infinite;
+    --text-color: white;
+    box-shadow: 0 0 calc(var(--white-shadow) * 1vw) calc(var(--white-shadow) * 0.15vw) rgba(255, 255, 255, 0.2);
+    animation: shadow-pulse calc(var(--animation-speed) * 2) linear infinite;
 }
 #dark_card > div:hover > div:before {
   --bg-size: 15;
@@ -201,25 +167,32 @@
   height: 100%;
   border-radius: calc(calc(var(--card-radius) * 0.9));
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-stretch: 150%;
+  font-size: 18px;
+  font-size: clamp(1.5vw, 1.5vmin, 32px);
   color: var(--text-color);
-  padding: 20px;
+  font-family:'codec_proheavy';
+  padding: calc(var(--card-width) / 8);
 }
 
 #dark_card > div > div span {
   display: inline-block;
+  margin-right: 8px;
   padding: 0.25em;
   border-radius: 4px;
-  background: #7431f9;
-  color: #fff;
+  background: var(--text-color);
+  color: #313539;
   font-family:'codec_proheavy';
   font-weight: 900!important;
 }
 
 #dark_card > div > div h3 {
-    font-family:'codec_proheavy';
+    color: black;
+    font-family:'codec_proheavy'
 }
 
 #dark_card > div > div:before {

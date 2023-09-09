@@ -15,6 +15,9 @@
     font-style: normal;
     font-display: block;
 }
+html {
+    overflow-x: hidden;
+}
 
 main, footer {
     background: #404347;
@@ -141,6 +144,17 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .navbar-nav .nav-item .soc-link:hover {
     color: #2466c1;
+}
+
+.language {
+    padding-left: 1vw;
+}
+
+.language .form-select {
+    color: #0000008C;
+    background-color: #fff;
+    margin-top: 4px;
+    font-family: 'codec_proregular';
 }
 /* end Navbar */
 

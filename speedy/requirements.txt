@@ -2,3 +2,4 @@ django
 gunicorn
 django-cleanup
 psycopg2-binary
+django-modeltranslation
