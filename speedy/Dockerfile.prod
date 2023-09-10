@@ -40,8 +40,7 @@ RUN addgroup -S speedy && adduser -S speedy -G speedy
 ENV HOME=/home/speedy
 ENV APP_HOME=/home/speedy/web
 RUN mkdir $APP_HOME
-RUN mkdir $APP_HOME/staticfiles
-RUN mkdir $APP_HOME/mediafiles
+RUN mkdir $APP_HOME/static
 WORKDIR $APP_HOME
 
 # install dependencies

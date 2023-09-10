@@ -3,3 +3,5 @@ gunicorn
 django-cleanup
 psycopg2-binary
 django-modeltranslation
+django-grappelli
+pillow

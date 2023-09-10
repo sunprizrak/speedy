@@ -7,8 +7,8 @@ services:
             dockerfile: Dockerfile.prod
         command: gunicorn speedy.wsgi:application --bind 0.0.0.0:8000
         volumes:
-            - static_volume:/home/speedy/web/staticfiles
-            - media_volume:/home/speedy/web/mediafiles
+            - static_volume:/home/speedy/web/static
+            - media_volume:/home/speedy/web/media
         expose:
             - '8000'
         stdin_open: true
@@ -30,8 +30,8 @@ services:
     nginx:
         build: ./nginx
         volumes:
-            - static_volume:/home/speedy/web/staticfiles
-            - media_volume:/home/speedy/web/mediafiles
+            - static_volume:/home/speedy/web/static
+            - media_volume:/home/speedy/web/media
             - ./data/certbot/conf:/etc/letsencrypt
             - ./data/certbot/www:/var/www/certbot
         ports:

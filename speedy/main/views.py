@@ -1,22 +1,17 @@
 from django.views.generic import TemplateView
+from django.utils.translation import gettext_lazy as _
 
 
 class HomeView(TemplateView):
     template_name = 'main/index.html'
     extra_context = {
-        'title': 'Home page'
+        'title': _('Home')
     }
 
 
-class AboutUs(TemplateView):
+class AboutUsView(TemplateView):
     template_name = 'main/about_us.html'
     extra_context = {
-        'title': 'About page'
+        'title': _('About')
     }
 
-
-class Games(TemplateView):
-    template_name = 'main/games.html'
-    extra_context = {
-        'title': 'Games'
-    }

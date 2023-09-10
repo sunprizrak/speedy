@@ -1,0 +1,44 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content-top %}
+    <div class="video">
+        <video data-object-fit="" autoplay="" muted="" playsinline="" loop="" src="{% static 'main/video/rings_jor_may.mp4' %}"></video>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container vh-100">
+        <div class="row-col-2 d-inline-flex flex-wrap">
+            {% for game in games %}
+                <div class="col-6 d-flex justify-content-center line-app">
+                    <div class="card-app bd-dark bg-gradient shadow ">
+                        <div class="card-img-box">
+                            <img class="select-none for-img" src="{{ game.logo.url }}">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-text">
+                                <h3>{{ game.name }}</h3>
+                                <p>{{ game.description }}</p>
+                            </div>
+                            <div class="card-btn">
+                                <span class="btn-google-play">
+                                    <a href="{{ game.google_store }}" target="_blank">
+                                        <img class="for-img" src="{% static 'games/img/google-play-badge.png' %}">
+                                    </a>
+                                </span>
+                                <span class="btn-app-store">
+                                    <a href="{{ game.apple_store }}" target="_blank">
+                                        <img class="for-img" src="{% static 'games/img/app-store-badge.svg' %}">
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

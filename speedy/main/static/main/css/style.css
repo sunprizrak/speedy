@@ -1,4 +1,5 @@
 @import url('/static/main/css/dark_card.css');
+@import url('/static/games/css/games.css');
 
 @font-face {
     font-family: 'codec_proheavy';
@@ -195,31 +196,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* end Index */
-
-/* Games */
-
-/* card app */
-.card-app {
-    width: 95%;
-    display: inline-flex;
-    border-radius: 30px;
-}
-
-.card-app .card-img-logo {
-    width: 220px;
-    border-radius: 30px;
-}
-
-.card-app .card-text {
-    padding-top: 20px;
-    padding-left: 15px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-}
-
-.card-app .card-btn {
-    margin-left: 5px;
-}
 
 /* end card app */
 
