@@ -10,7 +10,7 @@ __pycache__/
 venv/
 
 /speedy/db.sqlite3
-/speedy/media/
+/speedy/media/games/
 /speedy/*.pyc
 /speedy/*.db
 speedy/*.pid
