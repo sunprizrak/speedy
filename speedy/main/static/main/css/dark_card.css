@@ -304,3 +304,14 @@
     --hue: 360;
   }
 }
+
+@media (max-width: 1200px) {
+    #dark_card > div > div {
+        width: 160%;
+        font-size: clamp(3.0vw, 1.5vmin, 32px);
+    }
+
+    #dark_card > div > div span {
+        font-size: clamp(3.0vw, 1.5vmin, 32px);
+    }
+}

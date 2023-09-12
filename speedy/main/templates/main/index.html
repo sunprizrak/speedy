@@ -4,15 +4,15 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block content-top %}
-    <div class="video">
+    <div class="top-video">
         <video data-object-fit="" autoplay="" muted="" playsinline="" loop="" src="{% static 'main/video/index.mp4' %}"></video>
     </div>
     <div id="top-banner">
-        <div id="top-label-one" class="text-nowrap">
+        <div id="top-label-one">
             <h1 class="text-center">{% trans "Discover a world of endless gaming possibilities with Yodco" %}</h1>
         </div>
-        <div id="top-label-two" class="wrap">
-            <h3 class="text-start">
+        <div id="top-label-two">
+            <h3>
                 {% trans "Immerse yourself in the world of thrilling and thrilling mobile games created by Yodco. Exciting adventures, challenging puzzles and endless entertainment at your fingertips. Get ready to take your gaming experience to the next level with Yodco." %}
             </h3>
         </div>
@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="row mt-5">
-            <div class="col-6">
+            <div class="col-sm-6">
                 <div class="row">
                     <div class="col text-wrap">
                         <h1 class="text-center">
@@ -50,15 +50,15 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 d-flex justify-content-center" >
+            <div class="col-sm-6 d-flex justify-content-center" >
                 <img class="img-fluid index-image shadow select-none for-img" src="{% static 'main/img/marginalia-coming-soon.png' %}">
             </div>
         </div>
         <div class="row mt-5">
-            <div class="col-6 d-flex justify-content-center">
+            <div class="col-sm-6 d-flex justify-content-center my-order">
                 <img class="img-fluid index-image shadow select-none for-img" src="{% static 'main/img/marginalia-online-shopping.png' %}">
             </div>
-            <div class="col-6">
+            <div class="col-sm-6">
                 <div class="row">
                     <div class="col text-wrap">
                         <h1 class="text-center">
@@ -75,8 +75,8 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-5">
-            <div class="col-6">
+        <div class="row mt-5 pb-5">
+            <div class="col-sm-6">
                 <div class="row">
                     <div class="col text-wrap">
                         <h1 class="text-center">
@@ -92,7 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 d-flex justify-content-center" >
+            <div class="col-sm-6 d-flex justify-content-center" >
                 <img class="img-fluid index-image shadow select-none for-img" src="{% static 'main/img/marginalia-order-complete.png' %}">
             </div>
         </div>

@@ -10,10 +10,10 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container vh-100">
-        <div class="row-col-2 d-inline-flex flex-wrap">
+    <div class="container vh-100" id="games-container">
+        <div class="row d-inline-flex flex-wrap">
             {% for game in games %}
-                <div class="col-6 d-flex justify-content-center line-app">
+                <div class="col-sm-6 d-flex justify-content-center line-app">
                     <div class="card-app bd-dark bg-gradient shadow ">
                         <div class="card-img-box">
                             <img class="select-none for-img" src="{{ game.logo.url }}">
