@@ -8,7 +8,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto d-flex align-items-center" id="nav-soc">
                 <li class="nav-item">
                     <a class="soc-link px-1" href="https://www.facebook.com/ringssaga" target="_blank">
@@ -28,7 +28,7 @@
                     </a>
                 </li>
             </ul>
-            <ul class="navbar-nav" id="pages">
+            <ul class="navbar-nav ms-auto me-5" id="pages">
                 <li class="nav-item">
                     <a class="nav-link {% if '/' == request.path %}active{% endif %}" aria-current="page" href="{% url 'home' %}">{% trans 'Home' %}</a>
                 </li>
@@ -39,7 +39,7 @@
                     <a class="nav-link {% if '/games' == request.path %}active{% endif %}" href="{% url 'games' %}">{% trans 'Games' %}</a>
                 </li>
             </ul>
-            <ul class="navbar-nav mb-2 pe-3" id="nav-language">
+            <ul class="navbar-nav me-2" id="nav-language">
                 <li class="nav-item">
                     <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
                         <input name="next" type="hidden" value="{{ redirect_to }}">

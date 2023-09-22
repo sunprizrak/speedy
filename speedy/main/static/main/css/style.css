@@ -128,10 +128,6 @@ p, h1, h2, h3, h4, h5, h6 {
     padding: 3px!important;
 }
 
-#pages {
-    margin-left: 60rem!important;
-}
-
 .navbar-nav .nav-item .nav-link {
     color: #fff;
     font-family: 'codec_proheavy'
@@ -140,11 +136,6 @@ p, h1, h2, h3, h4, h5, h6 {
 .navbar-nav .nav-item .nav-link:hover {
     color: #2466c1;
 }
-
-#navbarSupportedContent {
-    justify-content: space-between;
-}
-
 
 .navbar-nav .nav-link.active {
     color: #2466c1!important;
@@ -164,7 +155,6 @@ p, h1, h2, h3, h4, h5, h6 {
 #nav-language .form-select {
     color: #0000008C;
     background-color: #fff;
-    margin-top: 4px;
     width: auto;
     font-family: 'codec_proregular';
 }
@@ -177,29 +167,30 @@ p, h1, h2, h3, h4, h5, h6 {
     pointer-events: none;
     top: 0;
     position: relative;
-    width: 100%;
     height: auto;
     max-height: 100%;
 }
 
+.top-video video {
+    width: 100%;
+    min-width: 992px;
+}
+
 #top-banner{
     position: absolute;
-    top: 35%;
-    left: 20%;
-    right: 25%;
+    top: 43%;
+    left: 15%;
+    right: 15%;
     z-index: 1001;
 }
 
-#top-banner #top-label-one {
-    white-space: nowrap!important;
-}
 
 #top-banner #top-label-two h3 {
     text-align: left;
 }
 
 #section-bottom {
-    margin-top: -50px;
+    margin-top: -32px;
     padding-top: 30px;
     padding-bottom: 30px;
     border-top-right-radius: 30px;
@@ -328,11 +319,22 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* mobile devices */
 
-@media (max-width: 1200px) {
-    /* navbar */
-     #navbarSupportedContent {
-
+@media (min-width: 992px) and (max-width: 1399px) {
+    #top-banner {
+        top: 50%;
+        left: 19%;
     }
+}
+
+@media (min-width: 1942px) {
+    #top-banner {
+        top: 52%;
+        left: 19%;
+    }
+}
+
+@media (max-width: 991px) {
+    /* navbar */
 
     #pages {
         margin-left: 0!important;
@@ -341,24 +343,20 @@ p, h1, h2, h3, h4, h5, h6 {
 
     #nav-soc {
         position: absolute;
-        bottom: 1rem;
+        bottom: 8px;
         right: 1rem;
     }
 
     #nav-language {
-            left: 1rem;
-            padding-right: 0!important;
+        margin-left: 1rem;
+        padding-right: 0!important;
     }
     /* end navbar */
 
-    .top-video {
-        height: 500px;
-    }
-
     #top-banner {
-        top: 10%;
-        left: 1%;
-        right: 1%;
+        top: 50%;
+        left: 7%;
+        right: 3%;
     }
 
     #top-banner #top-label-one {
@@ -383,7 +381,7 @@ p, h1, h2, h3, h4, h5, h6 {
     }
     /* end footer */
 
-
 }
+
 
 /* end mobile devices */

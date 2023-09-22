@@ -163,7 +163,7 @@
 
 #dark_card > div > div {
   position: absolute;
-  width: 100%;
+  width: 115%;
   height: 100%;
   border-radius: calc(calc(var(--card-radius) * 0.9));
   display: flex;
@@ -304,6 +304,13 @@
     --hue: 360;
   }
 }
+
+@media (min-width: 2220px) {
+    #dark_card > div > div {
+        width: 170%;
+    }
+}
+
 
 @media (max-width: 1200px) {
     #dark_card > div > div {

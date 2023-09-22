@@ -39,7 +39,7 @@
 
 
 /* mobile */
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
     #games-container {
         height: 100%!important;
     }
