@@ -3,57 +3,231 @@
     padding: 10px;
 }
 
+#games-container {
+    height: 100vh;
+    padding-bottom: 40px;
+}
+
 /* card app */
 .card-app {
     width: 100%;
-    display: inline-flex;
+    display: flex;
     border-radius: 30px;
+    height: 226px;
 }
 
 .card-app .card-img-box {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
 }
 
-.card-app .card-img-box img {
+.card-app .card-img-box .img-logo-app {
     width: 226px;
-    height: 226px;
     border-radius: 30px;
 }
 
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .card-app .card-text {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 15px;
     padding-right: 10px;
-    padding-bottom: 10px;
+}
+
+.card-app .card-text p {
+    margin: 0;
 }
 
 .card-app .card-btn {
-    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
 }
+
+.btn-google-play, .btn-app-store {
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.btn-google-play a , .btn-app-store a {
+    user-select: none;
+    text-decoration: none;
+}
+
+.btn-google-play img {
+    height: 68px;
+}
+
+.btn-app-store img {
+    height: 47px;
+}
+
+.btn-google-play:hover, .btn-app-store:hover {
+    opacity: 0.8;
+}
+
 /* end card app */
 
-
-/* mobile */
-@media (max-width: 991px) {
-    #games-container {
-        height: 100%!important;
-    }
-
+@media (max-width: 349px) {
     .card-app {
         flex-direction: column;
+        height: auto;
     }
 
-    .card-app .card-btn {
+    .card-app .card-img-box {
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .card-app .card-img-box .img-logo-app {
+        width: 186px;
+    }
+
+    .card-app .card-text {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 10px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .btn-google-play img {
+        height: 50px;
+    }
+
+    .btn-app-store img {
+        height: 34px;
+    }
+
+    #games-container {
+        height: 100%!important;
     }
 }
 
-/* end mobile */
+@media (min-width: 350px) and (max-width: 540px) {
+    .card-app {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card-app .card-img-box {
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .card-app .card-img-box .img-logo-app {
+        width: 186px;
+    }
+
+    .card-app .card-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        text-align: center;
+    }
+
+    .btn-google-play img {
+        height: 55px;
+    }
+
+    .btn-app-store img {
+        height: 37px;
+    }
+
+    #games-container {
+        height: 100%!important;
+    }
+}
+
+
+@media (min-width: 541px) and (max-width: 553px) {
+    .card-app .card-img-box .img-logo-app {
+        width: 173px;
+    }
+
+    .card-app {
+        height: auto;
+    }
+
+    .btn-google-play img {
+        height: 55px;
+    }
+
+    .btn-app-store img {
+        height: 37px;
+    }
+
+    #games-container {
+        height: 100%!important;
+    }
+}
+
+
+@media (min-width: 554px) and (max-width: 767px) {
+    .card-app {
+        height: auto;
+    }
+
+    .card-app .card-img-box .img-logo-app{
+        width: 186px;
+    }
+
+    .btn-google-play img {
+        height: 55px;
+    }
+
+    .btn-app-store img {
+        height: 37px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .card-app {
+        width: 90%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .card-app {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card-app .card-img-box {
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .card-app .card-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .btn-google-play img {
+        height: 55px;
+    }
+
+    .btn-app-store img {
+        height: 37px;
+    }
+
+}

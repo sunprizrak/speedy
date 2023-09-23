@@ -9,7 +9,7 @@ def path_logo(instance, filename):
 class Game(models.Model):
     name = models.CharField(max_length=30)
     logo = models.ImageField(upload_to=path_logo, default='./game_default.png', blank=True)
-    description = models.TextField(max_length=200)
+    description = models.TextField(max_length=100)
     apple_store = models.URLField(blank=True)
     google_store = models.URLField(blank=True)
     created = models.DateTimeField(auto_now_add=True)

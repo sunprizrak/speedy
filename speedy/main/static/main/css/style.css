@@ -216,32 +216,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* end card app */
 
-.btn-google-play, .btn-app-store {
-    user-select: none;
-    cursor: pointer;
-}
-
-.btn-google-play a , .btn-app-store a {
-    user-select: none;
-    text-decoration: none;
-}
-
-.btn-google-play img {
-    width: 150px;
-    height: auto;
-}
-
-.btn-app-store img {
-    width: 120px:
-    height: auto;
-}
-
-.btn-google-play:hover, .btn-app-store:hover {
-    opacity: 0.8;
-}
-
-/* end Games */
-
 /* Footer */
 .footer-link {
     cursor: pointer;
