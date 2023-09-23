@@ -11,10 +11,10 @@
 
 {% block content %}
     <div class="container" id="games-container">
-        <div class="row pt-4 d-inline-flex flex-wrap">
+        <div class="row pt-4 flex flex-wrap">
             {% for game in games %}
                 <div class="col-lg-6 d-flex justify-content-center line-app">
-                    <div class="card-app bd-dark bg-gradient shadow ">
+                    <div class="card-app bd-dark bg-gradient shadow">
                         <div class="card-img-box">
                             <img class="select-none for-img img-logo-app" src="{{ game.logo.url }}">
                         </div>
