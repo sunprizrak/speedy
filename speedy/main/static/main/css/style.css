@@ -173,7 +173,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .top-video video {
     width: 100%;
-    min-width: 992px;
 }
 
 #top-banner{
@@ -336,7 +335,7 @@ p, h1, h2, h3, h4, h5, h6 {
     /* end navbar */
 
     #top-banner {
-        top: 50%;
+        top: 42%;
         left: 7%;
         right: 3%;
     }

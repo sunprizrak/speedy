@@ -5,7 +5,9 @@
 
 {% block content-top %}
     <div class="top-video">
-        <video data-object-fit="" autoplay="" muted="" playsinline="" loop="" src="{% static 'main/video/550x1920.mp4' %}"></video>
+        <video class="d-none d-lg-block" data-object-fit="" autoplay="" muted="" playsinline="" loop="" src="{% static 'main/video/1920x550.mp4' %}"></video>
+        <video class="d-none d-sm-block d-lg-none" data-object-fit="" autoplay="" muted="" playsinline="" loop="" src="{% static 'main/video/990x550.mp4' %}"></video>
+        <video class="d-block d-sm-none" data-object-fit="" autoplay="" muted="" playsinline="" loop="" src="{% static 'main/video/550x990.mp4' %}"></video>
     </div>
 {% endblock %}
 
