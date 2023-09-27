@@ -5,7 +5,7 @@ from django.utils.translation import gettext_lazy as _
 class HomeView(TemplateView):
     template_name = 'main/index.html'
     extra_context = {
-        'title': _('Home')
+        'title': 'Yodcomedia'
     }
 
 
