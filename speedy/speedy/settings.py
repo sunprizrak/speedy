@@ -142,4 +142,5 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 ROBOTS_USE_SCHEME_IN_HOST = True
+ROBOTS_SITEMAP_URLS = os.environ.get("ROBOTS_SITEMAP_URLS", "http://127.0.0.1:8000").split(' ')
 ROBOTS_CACHE_TIMEOUT = 60*60*24
