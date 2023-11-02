@@ -1,5 +1,5 @@
 {% extends 'main/layout.html' %}
-{% load static %}
+{% load static i18n %}
 
 {% block title %}{{ title }}{% endblock %}
 
@@ -15,7 +15,7 @@
     <div class="container">
         <div class="row">
             <div class="col d-flex justify-content-center">
-                <h1 class="pt-3">Privacy Policy</h1>
+                <h1 class="pt-3">{% trans 'Privacy Policy' %}</h1>
             </div>
         </div>
         <div class="row">

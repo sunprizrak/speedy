@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-10 14:20+0300\n"
+"POT-Creation-Date: 2023-11-02 20:52+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,12 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
 "(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
 "n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+#: games/views.py:11 main/templates/main/footer.html:19
+#: main/templates/main/header.html:39
+msgid "Games"
+msgstr "Gry"
+
 #: main/templates/main/footer.html:7
 msgid "Contacts"
 msgstr "Łączność"
@@ -31,66 +37,87 @@ msgstr "Adres"
 msgid "Company"
 msgstr "Firma"
 
-#: main/templates/main/footer.html:18 main/templates/main/header.html:17
+#: main/templates/main/footer.html:18 main/templates/main/header.html:36
+#: main/views.py:17
 msgid "About"
 msgstr "O nas"
 
-#: main/templates/main/footer.html:19 main/templates/main/header.html:20
-msgid "Games"
-msgstr "Gry"
+#: main/templates/main/footer.html:20 main/views.py:24
+msgid "Privacy policy"
+msgstr "Polityka prywatności"
 
-#: main/templates/main/header.html:14
+#: main/templates/main/header.html:33
 msgid "Home"
 msgstr "Dom"
 
-#: main/templates/main/index.html:12
+#: main/templates/main/index.html:13
 msgid "Discover a world of endless gaming possibilities with Yodco"
 msgstr "Odkryj świat nieskończonych możliwości gier z Yodco"
 
-#: main/templates/main/index.html:16
+#: main/templates/main/index.html:17
 msgid ""
 "Immerse yourself in the world of thrilling and thrilling mobile games "
 "created by Yodco. Exciting adventures, challenging puzzles and endless "
 "entertainment at your fingertips. Get ready to take your gaming experience "
 "to the next level with Yodco."
-msgstr "Zanurz się w świecie ekscytujących i ekscytujących gier mobilnych stworzonych przez Yodco. Ekscytujące przygody, wymagające łamigłówki i niekończąca się rozrywka na wyciągnięcie ręki. Przygotuj się na przeniesienie wrażeń z gry na wyższy poziom dzięki Yodco."
+msgstr ""
+"Zanurz się w świecie ekscytujących i ekscytujących gier mobilnych "
+"stworzonych przez Yodco. Ekscytujące przygody, wymagające łamigłówki i "
+"niekończąca się rozrywka na wyciągnięcie ręki. Przygotuj się na "
+"przeniesienie wrażeń z gry na wyższy poziom dzięki Yodco."
 
-#: main/templates/main/index.html:30
-msgid "UNLEASH THE POWER OF MOBILE GAMES"
-msgstr "UWOLNIJ MOC GIER MOBILNYCH"
-
-#: main/templates/main/index.html:41
+#: main/templates/main/index.html:31
 msgid "Stand out from the crowd thanks to patented game mechanics"
 msgstr "Wyróżnij się z tłumu dzięki opatentowanej mechanice gry"
 
-#: main/templates/main/index.html:48
+#: main/templates/main/index.html:38
 msgid ""
 "In a crowded market, it's important to offer something unique. With Yodco, "
 "you can promote games with proprietary mechanics, making your game stand out "
 "from the competition. Get noticed and reach more players with innovative "
 "gaming features."
-msgstr "Na zatłoczonym rynku ważne jest, aby oferować coś wyjątkowego. Dzięki Yodco możesz promować gry zawierające autorskie mechaniki, dzięki czemu Twoja gra wyróżni się na tle konkurencji. Daj się zauważyć i dotrzyj do większej liczby graczy dzięki innowacyjnym funkcjom gier."
+msgstr ""
+"Na zatłoczonym rynku ważne jest, aby oferować coś wyjątkowego. Dzięki Yodco "
+"możesz promować gry zawierające autorskie mechaniki, dzięki czemu Twoja gra "
+"wyróżni się na tle konkurencji. Daj się zauważyć i dotrzyj do większej "
+"liczby graczy dzięki innowacyjnym funkcjom gier."
 
-#: main/templates/main/index.html:65
+#: main/templates/main/index.html:69
 msgid "Expand your gaming horizons with Eastern European gems"
 msgstr "Poszerz swoje horyzonty w grach dzięki klejnotom z Europy Wschodniej"
 
-#: main/templates/main/index.html:72
+#: main/templates/main/index.html:76
 msgid ""
 "Discover a world of unique and exciting games created by talented developers "
 "from Eastern Europe. From engaging storytelling to innovative gameplay, "
 "Yodco's carefully curated offering will make you feel like you've never felt "
 "before."
-msgstr "Odkryj świat wyjątkowych i ekscytujących gier stworzonych przez utalentowanych programistów z Europy Wschodniej. Od wciągającej opowieści po innowacyjną rozgrywkę – starannie dobrana oferta Yodco sprawi, że poczujesz się jak nigdy dotąd."
+msgstr ""
+"Odkryj świat wyjątkowych i ekscytujących gier stworzonych przez "
+"utalentowanych programistów z Europy Wschodniej. Od wciągającej opowieści po "
+"innowacyjną rozgrywkę – starannie dobrana oferta Yodco sprawi, że poczujesz "
+"się jak nigdy dotąd."
 
-#: main/templates/main/index.html:83
+#: main/templates/main/index.html:87
 msgid "Level up your game with immersive creations"
 msgstr "Podnieś poziom swojej gry dzięki wciągającym kreacjom"
 
-#: main/templates/main/index.html:90
+#: main/templates/main/index.html:94
 msgid ""
 "Stand out in a crowded marketplace with eye-catching creatives designed to "
 "promote your mobile game. From social media campaigns to targeted "
 "advertising, Yodco has all the tools and expertise you need to help you "
 "improve your game promotion and reach new audiences."
-msgstr "Wyróżnij się na zatłoczonym rynku dzięki przyciągającym wzrok kreacjom zaprojektowanym w celu promowania Twojej gry mobilnej. Od kampanii w mediach społecznościowych po reklamy ukierunkowane — Yodco dysponuje wszystkimi narzędziami i wiedzą, których potrzebujesz, aby pomóc Ci ulepszyć promocję gier i dotrzeć do nowych odbiorców."
+msgstr ""
+"Wyróżnij się na zatłoczonym rynku dzięki przyciągającym wzrok kreacjom "
+"zaprojektowanym w celu promowania Twojej gry mobilnej. Od kampanii w mediach "
+"społecznościowych po reklamy ukierunkowane — Yodco dysponuje wszystkimi "
+"narzędziami i wiedzą, których potrzebujesz, aby pomóc Ci ulepszyć promocję "
+"gier i dotrzeć do nowych odbiorców."
+
+#: main/templates/main/privacy_policy.html:18
+msgid "Privacy Policy"
+msgstr "Polityka prywatności"
+
+#~ msgid "UNLEASH THE POWER OF MOBILE GAMES"
+#~ msgstr "UWOLNIJ MOC GIER MOBILNYCH"
