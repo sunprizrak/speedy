@@ -6,3 +6,4 @@ django-modeltranslation
 django-grappelli
 pillow
 django-robots
+django-ckeditor

@@ -1,0 +1,27 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content-top %}
+    <div class="top-video">
+        <video class="d-none d-lg-block" data-object-fit="" autoplay="" muted="" playsinline="" loop="" src="{% static 'main/video/1920x550.mp4' %}"></video>
+        <video class="d-none d-sm-block d-lg-none" data-object-fit="" autoplay="" muted="" playsinline="" loop="" src="{% static 'main/video/990x550.mp4' %}"></video>
+        <video class="d-block d-sm-none" data-object-fit="" autoplay="" muted="" playsinline="" loop="" src="{% static 'main/video/550x990.mp4' %}"></video>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <h1 class="pt-3">Privacy Policy</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                {{ privacy_policy.text | safe }}
+            </div>
+        </div>
+    </div>
+{% endblock %}
