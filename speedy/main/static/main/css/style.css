@@ -220,15 +220,6 @@ ul {
 
 /* end card app */
 
-
-/* Privacy policy */
-#privacy_policy a {
-    cursor: pointer;
-    text-decoration: none;
-    color: #de8332;
-}
-/* end Privacy policy */
-
 /* Footer */
 .footer-link {
     cursor: pointer;
