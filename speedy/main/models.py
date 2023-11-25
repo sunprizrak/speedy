@@ -3,16 +3,11 @@ from ckeditor.fields import RichTextField
 
 
 class PrivacyPolicy(models.Model):
+    game_name = models.CharField(max_length=100, null=True, unique=True)
     text = RichTextField()
-
-    def save(self, *args, **kwargs):
-        if PrivacyPolicy.objects.exists() and not self.pk:
-            return
-        else:
-            super().save(*args, **kwargs)
 
     class Meta:
         verbose_name = 'Privacy policy'
 
     def __str__(self):
-        return 'Policy-privacy'
+        return f'Policy-privacy for {self.game_name}'

@@ -26,7 +26,8 @@ class PrivacyPolicyView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['privacy_policy'] = PrivacyPolicy.objects.first()
+        slug_from_url = self.kwargs.get('slug')
+        context['privacy_policy'] = PrivacyPolicy.objects.filter(game_name=slug_from_url).first()
         return context
 
     def get(self, request, *args, **kwargs):
