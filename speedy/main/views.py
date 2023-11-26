@@ -25,9 +25,14 @@ class PrivacyPolicyView(TemplateView):
     }
 
     def get_context_data(self, **kwargs):
+        url = self.request.build_absolute_uri()
         context = super().get_context_data(**kwargs)
-        slug_from_url = self.kwargs.get('slug')
-        context['privacy_policy'] = PrivacyPolicy.objects.filter(game_name=slug_from_url).first()
+
+        if len(url.split('/')) < 6:
+            context['privacy_policy'] = PrivacyPolicy.objects.filter(game_name='ringssaga').first()
+        else:
+            slug_from_url = self.kwargs.get('slug')
+            context['privacy_policy'] = PrivacyPolicy.objects.filter(game_name=slug_from_url).first()
         return context
 
     def get(self, request, *args, **kwargs):
